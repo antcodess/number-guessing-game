@@ -26,9 +26,8 @@ while True:
         attempt_count = 1
         while True:
             try:
-                user_guess = input("Pick a number between 1 and 10: ")
-                user_guess = int(user_guess)
-                if user_guess > 10:
+                user_guess = int(input("Pick a number between 1 and 10: "))
+                if user_guess > 10 or user_guess < 1:
                     print("Uh-Oh! Looks like that number is not between 1 and 10. Try again.")
                     attempt_count += 1
                     continue
@@ -37,11 +36,11 @@ while True:
                     high_score.append(attempt_count)
                     print("\nThe high score is {}".format(min(high_score)))
                     play_again = input("\nWould you like to play again? [Y]es or [N]o: ").lower()
-                    if play_again == "y":
+                    if play_again == "y" or play_again == "yes" :
                         random_number = random.randint(1, 10)
                         attempt_count = 1
                         continue
-                    elif play_again == "n":
+                    elif play_again == "n" or play_again == "no":
                         print("\nReturning to the main menu, see you next time!")
                         break
                     else:
