@@ -27,7 +27,7 @@ while True:
         while True:
             try:
                 user_guess = int(input("Pick a number between 1 and 10: "))
-                if user_guess > 10 or user_guess < 1:
+                if user_guess < 1 or user_guess > 10:
                     print("Uh-Oh! Looks like that number is not between 1 and 10. Try again.")
                     attempt_count += 1
                     continue
