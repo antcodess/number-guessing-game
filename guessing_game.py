@@ -56,7 +56,6 @@ while True:
                     attempt_count += 1
                     continue
             except ValueError:
-                # Handle exception if user does not enter a valid number the program
                 print("Woah! I didn't expect that! Guesses must be between 1 and 10. Let's start again...")
 
     elif user_command == "quit":
