@@ -112,3 +112,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Pycharm WorkSpaces File
+.idea/workspace.xml
+
+.DS_Store
